@@ -1,0 +1,71 @@
+/*a{*/
+    /*font-family : Helvetica, Arial, snas-serif;*/
+    /*text-decoration : none;*/
+    /*color : #FFFFFF;*/
+/*}
+.button{
+    padding: 0.75rem 1rem;
+    border-radius : 0.3rem;
+    box-shadow : 0;
+    background-color : #bbbbbb;
+    font-family : Helvetica, Arial, snas-serif;
+    text-decoration : none;
+    color : #FFFFFF;
+}
+
+.button:hover{
+    background-color : #ee2222;
+    box-shadow : 0 4px #990000;
+    transition : 0.5s;
+}*/
+body {
+    font-family: Helvetica;
+}
+
+input {
+    padding: 5px;
+    width: 120px;
+    margin-top:10px;
+}
+
+.item {
+    background-color: #efefef;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 1px;
+    padding: 8px 12px;
+    width: 120px;
+}
+
+
+.example-enter {
+    opacity: 0;
+    transform: translateX(-250px);
+}
+.example-enter.example-enter-active {
+    opacity: 1;
+    transform:   translateX(0);
+    transition: 0.3s;
+}
+
+
+.example-leave {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.example-leave.example-leave-active {
+    opacity: 0;
+    transform: translateX(250px);
+    transition: 0.3s;
+}
+
+.example-appear {
+    opacity: 0;
+    transform: translateX(-250px);
+}
+.example-appear.example-appear-active {
+    opacity: 1;
+    transform:   translateX(0);
+    transition: .3s;
+}
