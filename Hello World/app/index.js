@@ -9,6 +9,7 @@ import Home from './containers/Home';
 import About from './containers/About';
 import Posts from './containers/Posts';
 import Post from './containers/Post';
+import ServerError from './containers/ServerError';
 
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
@@ -22,6 +23,7 @@ ReactDOM.render(
             <Route path="post" component={Posts}>
                 <Route path=":id" component={Post}/>
             </Route>
+            <Route path="*" component={ServerError}/>
         </Route>
     </Router>,
     document.getElementById('root')
